@@ -1,10 +1,10 @@
 {
   "private": true,
   "name": "@conheca-meta-clients/react-app",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "dependencies": {
-    "@conheca-meta-clients/i18n": "^0.0.0",
-    "@conheca-meta-clients/store": "^0.0.0",
+    "@conheca-meta-clients/i18n": "^0.1.0",
+    "@conheca-meta-clients/store": "^0.1.0",
     "@meta-react/i18n": "^0.0.5",
     "eslint-config-react-app": "^5.0.2",
     "lodash": "^4.17.15",
