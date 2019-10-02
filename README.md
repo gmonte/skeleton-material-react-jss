@@ -61,7 +61,7 @@ Para manipular as dependências em um pacote específico, você deve navegar pel
   ```
 - ***Tag*** versões dos pacotes alterados:
   ```
-  $ yarn lerna publish --skip-npm
+  $ yarn lerna version
   ```
 - ***Publicar*** e ***Tag*** versões dos pacotes alterados:
   ```
