@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "conheca-meta",
+  "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
+  "workspaces": [
+    "clients/*/*",
+    "clients/*/*/components/*",
+    "server"
+  ],
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "license": "ISC"
+}

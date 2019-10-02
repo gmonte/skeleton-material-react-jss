@@ -1,0 +1,6 @@
+{
+  "packages": ["clients/*/*", "clients/*/*/components/*", "server"],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

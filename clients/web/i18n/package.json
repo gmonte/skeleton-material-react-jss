@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "@conheca-meta-client-web/react-i18n",
+  "version": "0.0.0",
+  "description": "Component that provides i18n to react apps",
+  "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
+  "main": "src/index.js",
+  "license": "ISC",
+  "dependencies": {
+    "react-intl": "2.9.0"
+  }
+}
