@@ -4,6 +4,7 @@ node_modules/
 .idea/
 .DS_Store
 .vscode/
+.history/
 npm-debug.log
 jsconfig.json
 spec/
