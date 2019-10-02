@@ -4,13 +4,13 @@ import dictionaries from '@conheca-meta-clients/i18n'
 import { StoreProvider } from '@conheca-meta-clients/store'
 import { selectCurrentLanguage } from '@conheca-meta-clients/store/src/selectors/i18n'
 import { useSelector } from 'react-redux'
-import AppContainer from './containers/App'
+import ScreenRouter from './screens/ScreenRouter'
 
 const AppStored = () => {
   const currentLanguage = useSelector(selectCurrentLanguage)
   return (
     <I18nProvider language={ currentLanguage } dictionaries={ dictionaries }>
-      <AppContainer />
+      <ScreenRouter />
     </I18nProvider>
   )
 }
