@@ -1,5 +1,10 @@
 {
-  "packages": ["clients/*/*", "clients/*/*/components/*", "server"],
+  "packages": [
+    "clients/*/*",
+    "clients/*/apps/*",
+    "clients/*/components/*",
+    "server"
+  ],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true
