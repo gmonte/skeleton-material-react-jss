@@ -2,6 +2,7 @@
   "private": true,
   "name": "conheca-meta",
   "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
+  "license": "ISC",
   "workspaces": [
     "clients/*/*",
     "clients/*/apps/*",
@@ -9,8 +10,8 @@
     "server"
   ],
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "eslint": "^4.19.1",
+    "babel-eslint": "10.0.3",
+    "eslint": "^6.1.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-app": "^3.0.8",
     "eslint-loader": "^2.1.2",
@@ -21,7 +22,13 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "lerna": "^3.16.4"
+    "lerna": "^3.16.4",
+    "pre-commit": "^1.2.2"
   },
-  "license": "ISC"
+  "scripts": {
+    "lint": "lerna run --parallel lint -- --"
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }

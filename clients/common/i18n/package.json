@@ -5,5 +5,8 @@
   "description": "Package that provide dictionaries to use with @meta-react/i18n",
   "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
   "main": "src/index.js",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint --cache ./src --ext .js"
+  }
 }
