@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@conheca-meta/react-app",
+  "name": "@conheca-meta-clients/react-app",
   "version": "0.0.0",
   "dependencies": {
     "eslint-config-react-app": "^5.0.2",
