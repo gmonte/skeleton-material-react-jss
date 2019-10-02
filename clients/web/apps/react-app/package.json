@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "dependencies": {
     "@conheca-meta-clients/i18n": "^0.0.0",
+    "@conheca-meta-clients/store": "^0.0.0",
     "@meta-react/i18n": "^0.0.5",
     "eslint-config-react-app": "^5.0.2",
     "lodash": "^4.17.15",
@@ -31,7 +32,6 @@
     ]
   },
   "devDependencies": {
-    "babel-loader": "^8.0.6",
     "react-app-rewired": "^2.1.3"
   }
 }

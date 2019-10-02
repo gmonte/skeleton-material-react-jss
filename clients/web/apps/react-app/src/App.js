@@ -1,24 +1,25 @@
 import React from 'react'
-import I18n, { I18nProvider } from '@meta-react/i18n'
+import { I18nProvider } from '@meta-react/i18n'
 import dictionaries from '@conheca-meta-clients/i18n'
-import logo from './logo.svg'
-import './App.css'
+import { StoreProvider } from '@conheca-meta-clients/store'
+import { selectCurrentLanguage } from '@conheca-meta-clients/store/src/selectors/i18n'
+import { useSelector } from 'react-redux'
+import AppContainer from './containers/App'
+
+const AppStored = () => {
+  const currentLanguage = useSelector(selectCurrentLanguage)
+  return (
+    <I18nProvider language={ currentLanguage } dictionaries={ dictionaries }>
+      <AppContainer />
+    </I18nProvider>
+  )
+}
 
 function App() {
   return (
-    <I18nProvider language="pt-BR" dictionaries={ dictionaries }>
-      <div className="App">
-        <header className="App-header">
-          <img src={ logo } className="App-logo" alt="logo" />
-          <p>
-            <I18n>invalid CPF</I18n>
-          </p>
-          <p>
-            <I18n>hello world</I18n>
-          </p>
-        </header>
-      </div>
-    </I18nProvider>
+    <StoreProvider>
+      <AppStored />
+    </StoreProvider>
   )
 }
 
