@@ -1,5 +1,10 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  flex: 1;
+`
 
 class GuestLayout extends PureComponent {
   render() {
@@ -8,10 +13,10 @@ class GuestLayout extends PureComponent {
     } = this.props
 
     return (
-      <div>
+      <Container>
         <h2>Guest Layout</h2>
         <div>{children}</div>
-      </div>
+      </Container>
     )
   }
 }

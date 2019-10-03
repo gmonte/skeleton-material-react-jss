@@ -1,5 +1,4 @@
-import Colors from './Colors'
-import Fonts from './Fonts'
+import { Colors, Fonts } from '@conheca-meta-clients/styles'
 import fontThin from '../assets/fonts/ProductSans-Thin.woff'
 import fontRegular from '../assets/fonts/ProductSans-Regular.woff'
 import fontMedium from '../assets/fonts/ProductSans-Medium.woff'

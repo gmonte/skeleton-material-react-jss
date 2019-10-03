@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
-// import PropTypes from 'prop-types'
+import flow from 'lodash/fp/flow'
+import withSnackbars from '@conheca-meta-clients/react-snackbars/src/actions/withSnackbars'
 import { withStyles } from '@material-ui/core/styles'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { useSelector } from 'react-redux'
@@ -27,8 +28,7 @@ const ScreenRouter = () => {
   )
 }
 
-// ScreenRouter.propTypes = {
-
-// }
-
-export default withStyles(globalStyles)(ScreenRouter)
+export default flow(
+  withStyles(globalStyles),
+  withSnackbars()
+)(ScreenRouter)

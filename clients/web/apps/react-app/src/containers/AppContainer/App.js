@@ -8,8 +8,6 @@ import { selectAuthenticated } from '@conheca-meta-clients/store/src/selectors/a
 import { DialogPortalContext } from '@conheca-meta-clients/react-dialog-portal'
 import TestModal from '../../modals/TestModal'
 
-import './App.css'
-
 function App() {
   const { openDialog } = useContext(DialogPortalContext)
 
@@ -25,13 +23,12 @@ function App() {
   const onOpenModal = () => openDialog({ component: TestModal, componentProps: { loading: true } })
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <p>
           <I18n>hello world</I18n>
         </p>
         <p>{currentLanguage}</p>
-        <hr />
         <button type="button" onClick={ () => onChangeLanguage('pt-BR') }>
           pt-BR
         </button>

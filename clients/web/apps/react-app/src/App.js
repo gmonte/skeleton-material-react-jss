@@ -8,7 +8,6 @@ import { useSelector } from 'react-redux'
 import ScreenRouter from './screens/ScreenRouter'
 import defaultTheme from './themes/default'
 
-
 const AppStored = () => {
   const currentLanguage = useSelector(selectCurrentLanguage)
   return (

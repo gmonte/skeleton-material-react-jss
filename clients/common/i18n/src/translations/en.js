@@ -1,4 +1,5 @@
 export default {
   'hello world': 'Hello World!',
-  'close': 'Close'
+  'close': 'Close',
+  'copy': 'Copy'
 }
