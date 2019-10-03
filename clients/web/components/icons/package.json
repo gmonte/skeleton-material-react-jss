@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@conheca-meta-clients/react-icons",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Package that provide react icons",
   "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
   "main": "src/index.js",

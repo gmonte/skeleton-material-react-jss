@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@conheca-meta-clients/react-dialog-portal",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Package that provide react dialogs",
   "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
   "main": "src/index.js",
@@ -13,7 +13,7 @@
     "@material-ui/core": "^4.5.0"
   },
   "dependencies": {
-    "@conheca-meta-clients/react-loaders": "^0.0.0",
+    "@conheca-meta-clients/react-loaders": "^0.1.0",
     "lodash": "^4.17.15",
     "mobx": "^5.10.1",
     "mobx-react": "^6.0.3"
