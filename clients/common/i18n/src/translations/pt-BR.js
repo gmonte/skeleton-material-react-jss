@@ -1,3 +1,4 @@
 export default {
-  'hello world': 'Olá Mundo!'
+  'hello world': 'Olá Mundo!',
+  'close': 'Fechar'
 }

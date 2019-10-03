@@ -274,7 +274,7 @@
     "@babel/helper-create-class-features-plugin" "^7.5.5"
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-proposal-decorators@7.6.0":
+"@babel/plugin-proposal-decorators@7.6.0", "@babel/plugin-proposal-decorators@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.6.0.tgz#6659d2572a17d70abd68123e89a12a43d90aa30c"
   integrity sha512-ZSyYw9trQI50sES6YxREXKu+4b7MAg6Qx2cvyDDYjP2Hpzd3FleOUwC9cqn1+za8d0A2ZU8SHujxFao956efUg==
@@ -1929,10 +1929,10 @@
   resolved "https://registry.yarnpkg.com/@meta-awesome/i18n/-/i18n-0.0.2.tgz#6f994a521c9cfc6eaac9ca5660f53c1ba89da264"
   integrity sha512-l99e/v7q85YbnAuTpdwnXfkLft+cLzXwjzomw8EB4iLfmi0zMo521XFc8CdGXiC9hVpLcEqVkhVKGAOdSnu9pQ==
 
-"@meta-react/i18n@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@meta-react/i18n/-/i18n-0.0.5.tgz#aef3d923bffc52715883ac1d3b7ae4a2a2700c4f"
-  integrity sha512-O5YpWrn/hdsQowLgXERB/gQysTo7KTXyy550wBPAD1SnnqJMhilzdF/zJ+jhZBVeYg/CKXL8yQZMRs+VqDbijw==
+"@meta-react/i18n@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@meta-react/i18n/-/i18n-0.0.10.tgz#1a61beb77bbaa4366909bd3f4ac6c101cf3a468b"
+  integrity sha512-/gHFuIRTPaWy68ja58d4LfsQMbOZjvkwEdfY5Qfjg/gPdPm4MQVe2x33Sa16awL7ts3wJWrRHOhmgS8oYkot7A==
   dependencies:
     "@meta-awesome/functions" "^0.0.4"
     "@meta-awesome/i18n" "^0.0.2"

@@ -9,7 +9,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "peerDependencies": {
+    "@material-ui/core": "^4.5.0"
+  },
   "dependencies": {
+    "@conheca-meta-clients/react-loaders": "^0.0.0",
     "lodash": "^4.17.15",
     "mobx": "^5.10.1",
     "mobx-react": "^6.0.3"

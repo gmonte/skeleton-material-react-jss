@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectAuthenticated } from '@conheca-meta-clients/store/src/selectors/auth'
 import supportsHistory from '@meta-awesome/functions/src/supportsHistory'
-// import DialogPortal from '@conheca-meta-clients/react-dialog-portal'
+import { DialogPortalProvider } from '@conheca-meta-clients/react-dialog-portal'
 import AuthenticatedScreenRouter from './authenticated/AuthenticatedScreenRouter'
 import GuestScreenRouter from './guest/GuestScreenRouter'
 import globalStyles from '../styles/globalStyles'
@@ -18,12 +18,11 @@ const ScreenRouter = () => {
 
   return (
     <Router forceRefresh={ forceRefresh }>
-      <>
-        {/* <DialogPortal /> */}
+      <DialogPortalProvider>
         <Suspense fallback={ <div /> }>
           <RouterContext />
         </Suspense>
-      </>
+      </DialogPortalProvider>
     </Router>
   )
 }

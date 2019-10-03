@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import I18n from '@meta-react/i18n'
 import { useSelector, useDispatch } from 'react-redux'
 import { Types as TypesI18n } from '@conheca-meta-clients/store/src/ducks/i18n'
 import { Types as TypesAuth } from '@conheca-meta-clients/store/src/ducks/auth'
 import { selectCurrentLanguage } from '@conheca-meta-clients/store/src/selectors/i18n'
 import { selectAuthenticated } from '@conheca-meta-clients/store/src/selectors/auth'
+import { DialogPortalContext } from '@conheca-meta-clients/react-dialog-portal'
+import TestModal from '../../modals/TestModal'
+
 import './App.css'
 
 function App() {
-  // console.warn('container props', props)
+  const { openDialog } = useContext(DialogPortalContext)
 
   const dispatch = useDispatch()
 
@@ -19,6 +22,7 @@ function App() {
   const onLogin = () => dispatch({ type: TypesAuth.LOGIN })
   const onLogout = () => dispatch({ type: TypesAuth.LOGOUT })
   const onChangeLanguage = language => dispatch({ type: TypesI18n.SET_CURRENT_LANGUAGE, language })
+  const onOpenModal = () => openDialog({ component: TestModal, componentProps: { loading: true } })
 
   return (
     <div className="App">
@@ -42,6 +46,9 @@ function App() {
             : <button type="button" onClick={ onLogout }>logout</button>
         }
         {loading && <p>carregando...</p>}
+        <br />
+        <br />
+        <button type="button" onClick={ onOpenModal }>open modal</button>
       </header>
     </div>
   )
