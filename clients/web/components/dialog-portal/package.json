@@ -6,9 +6,6 @@
   "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
   "main": "src/index.js",
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
   "peerDependencies": {
     "@material-ui/core": "^4.5.0"
   },
