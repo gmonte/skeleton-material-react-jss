@@ -40,6 +40,8 @@ const LoginFormContainer = (props) => {
     password: useField('password', form, validPassword)
   }
 
+  const getErrorMessage = error => (error ? formatMessage({ id: error }) : null)
+
   return (
     <Form form={ form } className={ classes.formContainer } onSubmit={ handleSubmit }>
       <EmailInput
@@ -47,7 +49,7 @@ const LoginFormContainer = (props) => {
         { ...fields.email.input }
         required
         disabled={ loading }
-        helperText={ (fields.email.meta.touched ? formatMessage({ id: fields.email.meta.error }) : '') }
+        helperText={ (fields.email.meta.touched ? getErrorMessage(fields.email.meta.error) : '') }
         error={ (fields.email.meta.touched && !!fields.email.meta.error) }
         fullWidth
         autoFocus
@@ -57,7 +59,7 @@ const LoginFormContainer = (props) => {
         { ...fields.password.input }
         required
         disabled={ loading }
-        helperText={ (fields.password.meta.touched ? formatMessage({ id: fields.password.meta.error }) : '') }
+        helperText={ (fields.password.meta.touched ? getErrorMessage(fields.password.meta.error) : '') }
         error={ (fields.password.meta.touched && !!fields.password.meta.error) }
         fullWidth
       />

@@ -20,7 +20,7 @@ const { obterConvite } = require('../routes/convite/get')
 //   on prg.oi_programa = p.oi_programa
 // join tescpgm0 pgm
 //   on pgm.me_prog = prg.me_programa
-//   join tescsnl0 snl on snl.si_local_exibicao = p.me_merc2 
+//   join tescsnl0 snl on snl.si_local_exibicao = p.me_merc2
 // `
 
 routes.get('/convite', obterConvite)
