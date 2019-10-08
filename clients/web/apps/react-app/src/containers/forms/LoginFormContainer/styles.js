@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   formContainer: {
     display: 'flex',
     flexDirection: 'column',
@@ -22,6 +22,13 @@ const useStyles = makeStyles(() => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'flex-start'
+  },
+  button: {
+    marginTop: 15,
+    marginBottom: 10
+  },
+  extendedIcon: {
+    marginRight: theme.spacing(1)
   }
 }))
 

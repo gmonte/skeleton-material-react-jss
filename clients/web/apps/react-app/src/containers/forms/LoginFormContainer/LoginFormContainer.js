@@ -9,7 +9,8 @@ import validateRequired from '@meta-awesome/validators/src/required'
 import validatePassword from '@meta-awesome/validators/src/password'
 import validateEmail from '@meta-awesome/validators/src/email'
 import I18n, { I18nContext } from '@meta-react/i18n'
-import Button from '@material-ui/core/Button'
+import Fab from '@material-ui/core/Fab'
+import LoginIcon from '@conheca-meta-clients/react-icons/src/LoginIcon'
 import useStyles from './styles'
 
 const validEmail = (value) => {
@@ -64,9 +65,10 @@ const LoginFormContainer = (props) => {
         fullWidth
       />
 
-      <Button type="submit">
+      <Fab type="submit" variant="extended" color="secondary" aria-label="login" className={ classes.button }>
+        <LoginIcon className={ classes.extendedIcon } />
         <I18n>login</I18n>
-      </Button>
+      </Fab>
     </Form>
   )
 }

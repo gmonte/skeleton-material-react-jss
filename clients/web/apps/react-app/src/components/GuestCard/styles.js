@@ -1,4 +1,6 @@
+import hexToRgb from 'hex-to-rgba'
 import { makeStyles } from '@material-ui/core/styles'
+import { Colors } from '@conheca-meta-clients/styles'
 
 const useStyles = makeStyles(() => ({
   container: {
@@ -17,9 +19,10 @@ const useStyles = makeStyles(() => ({
   },
   cardContainer: {
     width: 450,
-    padding: 20,
+    padding: 30,
     paddingTop: 40,
-    paddingBottom: 5,
+    paddingBottom: 15,
+    backgroundColor: hexToRgb(Colors.white, 0.9),
     [`@media (max-width: ${ 454 }px)`]: {
       width: '100% !important'
     }
@@ -27,29 +30,11 @@ const useStyles = makeStyles(() => ({
   brandContainer: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 10
   },
   brand: {
-    maxWidth: 150,
-    width: '100%'
-  },
-  actionsContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingLeft: 16,
-    paddingRight: 16,
-    paddingBottom: 10
-  },
-  button: {
-    marginTop: 10
-  },
-  footerContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    flex: 1,
-    marginTop: 5,
+    maxWidth: 200,
     width: '100%'
   }
 }))
