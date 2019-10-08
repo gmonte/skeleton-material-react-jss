@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "@conheca-meta-clients/s-firebase",
+  "version": "0.0.0",
+  "author": "Guilherme Monte <guilherme.monte@meta.com.br>",
+  "main": "src/index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "firebase": "^6.2.4"
+  },
+  "scripts": {
+    "lint": "eslint --cache ./src --ext .js"
+  }
+}

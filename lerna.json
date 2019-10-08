@@ -1,6 +1,7 @@
 {
   "packages": [
     "clients/*/*",
+    "clients/common/services/*",
     "clients/*/apps/*",
     "clients/*/components/*",
     "server"

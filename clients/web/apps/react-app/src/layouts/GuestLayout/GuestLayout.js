@@ -1,28 +1,28 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import { withStyles } from '@material-ui/core/styles'
 
-const Container = styled.div`
-  flex: 1;
-`
+import styles from './styles'
 
 class GuestLayout extends PureComponent {
   render() {
     const {
-      children
+      children,
+      classes
+      // history
     } = this.props
 
     return (
-      <Container>
-        <h2>Guest Layout</h2>
-        <div>{children}</div>
-      </Container>
+      <div className={ classes.container }>
+        <div className={ classes.contentScroll }>{children}</div>
+      </div>
     )
   }
 }
 
 GuestLayout.propTypes = {
+  classes: PropTypes.shape().isRequired,
   children: PropTypes.element.isRequired
 }
 
-export default GuestLayout
+export default withStyles(styles)(GuestLayout)

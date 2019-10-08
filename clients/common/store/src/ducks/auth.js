@@ -4,7 +4,7 @@ import { createActions, createReducer } from 'reduxsauce'
  * Creating action types & creators
  * */
 export const { Types, Creators } = createActions({
-  login: [],
+  login: ['email', 'password'],
   loginSuccess: [],
   loginError: ['error'],
   logout: []
@@ -33,6 +33,7 @@ const loginSuccess = (state = INITIAL_STATE) => ({
 
 const loginError = (state = INITIAL_STATE, { error }) => ({
   ...state,
+  loading: false,
   error
 })
 
