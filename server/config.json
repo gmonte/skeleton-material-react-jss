@@ -1,0 +1,22 @@
+{
+  "development": {
+    "config_id": "development",
+    "app_name": "MMS Middleware Media+ Integration",
+    "app_desc": "Application that collects Media+'s data to ingest on MMS Middleware.",
+    "port": 3000
+  },
+  "testing": {
+    "config_id": "test",
+    "database": "my-app-db-test"
+  },
+  "staging": {
+    "config_id": "staging",
+    "node_port": 8080,
+    "database": "my-app-db-stag"
+  },
+  "production": {
+    "config_id": "production",
+    "node_port": 8080,
+    "database": "my-app-db-prod"
+  }
+}
