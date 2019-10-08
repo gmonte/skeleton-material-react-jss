@@ -28,9 +28,9 @@ export default {
       },
       tooltip: {
         margin: '3px !important',
-        backgroundColor: Colors.secondary,
+        backgroundColor: Colors.primary,
         color: Colors.white,
-        border: `1px solid ${ Colors.primary }`,
+        border: `1px solid ${ Colors.blue[1] }`,
         fontSize: 12,
         letterSpacing: 1
       }
