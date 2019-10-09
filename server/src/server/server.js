@@ -5,6 +5,8 @@ const bodyParser = require('body-parser')
 // const cookieParser = require('cookie-parser')
 // const multer = require('multer')
 const { routes } = require('../application/application')
+
+const knex = require('../infraestructure/database/schema-knex')
 // const expressPino = require('express-pino-logger')
 // const requestId = require('express-request-id')
 // const { logger } = require('~inf@logger')
@@ -93,33 +95,24 @@ app.use('/', routes)
 
 // Para prevenir erros em testes
 if (require.main === module) {
-  app.listen(process.env.PORT, () => {
-    console.log('Listening on port', process.env.PORT)
+  const migConfig = {
+    tableName: 'knex_migrations',
+    directory: `${ __dirname }../../../devops/knex/migrations`
+  }
 
-    // if (process.env.NODE_APP_INSTANCE === '0') {
-    //   let startProducerProgramas = new Date(Date.now() + 1000)
-    //   let startProducerCanais = new Date(Date.now() + 1000)
-    //   let startConsumerCanais = new Date(Date.now() + 1000)
-    //   let startConsumerProgramas = new Date(Date.now() + 1000)
+  knex.migrate
+    .latest(migConfig)
+    .then((result) => {
+      console.log('Migrations OK...', result, process.env.NODE_ENV)
+      app.listen(process.env.PORT, (req, res) => {
+        console.log('Listening on port', process.env.PORT, process.env.NODE_ENV)
+      })
+    })
+    .catch((result) => {
+      console.log('Migrations ERROR...')
+      console.log(result)
+    })
 
-    //   nodeSchedule.scheduleJob(startProducerCanais, async function(fireDate) {
-    //     //  producerCanaisStream()
-    //   })
-
-    //   nodeSchedule.scheduleJob(startProducerProgramas, async function(
-    //     fireDate
-    //   ) {
-    //     // producerProgramaStream()
-    //   })
-
-    //   nodeSchedule.scheduleJob(startConsumerCanais, async function(fireDate) {
-    //     // consumerCanaisStream()
-    //   })
-    //   // main process on clustering
-
-    //   consumerProgramaStream()
-    // }
-  })
 } else {
   module.exports = app
 }
