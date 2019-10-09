@@ -1,6 +1,6 @@
 const Colors = () => {
-  const primary = '#142883'
-  const secondary = '#b1d1f4'
+  const primary = '#012060'
+  const secondary = '#92D14E'
 
   return {
     primary,
@@ -10,7 +10,7 @@ const Colors = () => {
     black: '#000',
     white: '#fff',
     grey: ['#e3e3e3', '#EEEEEF', '#bfbfbf', '#fcfcfc', '#f7f7f7'],
-    blue: ['#214084', '#4d8fd6'],
+    blue: ['#012060', '#006BC6'],
     green: ['#d6edd3', '#a9cca5', '#8abe87'],
     warning: ['#DFA800', '#FCBF00'],
     muted: '#848484',

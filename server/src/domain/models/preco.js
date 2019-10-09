@@ -1,11 +1,5 @@
 class PrecoChave {
-  constructor(
-    competencia = null,
-    mercado = '',
-    exibidora = '',
-    programa = 0,
-    secundagem = 0
-  ) {
+  constructor(competencia = null, mercado = '', exibidora = '', programa = 0, secundagem = 0) {
     this.competencia = competencia // 07/2019
     this.mercado = mercado // SP
     this.exibidora = exibidora // SP1
@@ -17,15 +11,10 @@ class PrecoChave {
 }
 
 class Preco extends PrecoChave {
-  constructor(
-    competencia,
-    mercado,
-    exibidora,
-    programa,
-    secundagem,
-    valor = 0.0
-  ) {
-    super(arguments)
+  constructor(...args) {
+    super(...args)
+
+    const { valor } = args
     this.valor = valor
   }
 }

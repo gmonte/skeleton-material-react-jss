@@ -13,6 +13,8 @@ const generateClassName = createGenerateClassName()
 const withJssThemeProvider = theme => WrappedComponent => (props) => {
   const [currentTheme] = useState(createMuiTheme(theme))
 
+  console.warn('currentTheme', currentTheme)
+
   return (
     <JssProvider jss={ jss } generateClassName={ generateClassName }>
       <MuiThemeProvider theme={ currentTheme }>
