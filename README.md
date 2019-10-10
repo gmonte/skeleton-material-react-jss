@@ -1,77 +1,68 @@
-## Conheça a meta
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> Esse projeto é um monorepositório com o intuito de centralizar o desenvolvimento de pacotes Javascript.
+## Available Scripts
 
+In the project directory, you can run:
 
-### Requisitos de ambiente
+### `yarn start`
 
-- *Node LTS* - recomendamos instalação via **[nvm]**
-- *NPM LTS*  - recomendamos instalação via **[nvm]**
-- *[Yarn]* `^1.17.*` **Obrigatório**
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# Atenção
-### Esse monorepositório está configurado para trabalhar com `yarn workspaces`.
-### Utilze todos os comandos abaixo somente com `yarn`.
-#### Nós *não* garantimos total compatibilidade com npm!
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-___
+### `yarn test`
 
-## Instalação
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Clone esse repositório na sua máquina
-- Execute na raíz do projeto:
-  ```
-  $ yarn && yarn lerna bootstrap
-  ```
+### `yarn build`
 
-## Dependências de projeto e de desenvolvimento
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Para manipular as dependências em um pacote específico, você deve navegar pelo terminal até o diretório desse pacote, e então executar:
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-- Para adicionar/atualizar uma dependência externa:
-  ```
-  $ yarn add <package_name>
-  ```
-- Para adicionar uma dependência interna (comando deve ser executado na raíz do mono-repositório):
-  ```
-  $ yarn lerna add <package_name> --scope=<package_dest>
-  ```
-- Para adicionar/atualizar uma dependência de desenvolvimento:
-  ```
-  $ yarn add -D <package_name>
-  ```
-- Para remover qualquer dependência:
-  ```
-  $ yarn remove <package_name>
-  ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Principais comandos do monorepositório
+### `yarn eject`
 
-- ***Registrar*** pacote no workspace; ***Instalar*** e ***Linkar*** todas as dependências do workspace:
-  ```
-  $ yarn lerna bootstrap
-  ```
-- ***Visualizar*** pacotes do workspace:
-  ```
-  $ yarn lerna la
-  ```
-- ***Limpar*** node_modules de todos os pacotes do workspace:
-  ```
-  $ yarn lerna clean
-  ```
-- ***Tag*** versões dos pacotes alterados:
-  ```
-  $ yarn lerna version
-  ```
-- ***Publicar*** e ***Tag*** versões dos pacotes alterados:
-  ```
-  $ yarn lerna publish
-  ```
-- Ajuda:
-  ```
-  $ yarn lerna --help
-  ```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-[//]: #
-[nvm]: https://github.com/nvm-sh/nvm
-[yarn]: https://yarnpkg.com/docs/install
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
